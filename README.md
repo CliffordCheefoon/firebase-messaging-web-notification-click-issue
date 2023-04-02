@@ -5,7 +5,7 @@ An extension of the [Firebase Official Docs](https://firebase.google.com/docs/cl
 
 
 ## The issue
-As of Firebase 9.20.0 JS SDK, [the Firebase Service Worker implementation](https://github.com/firebase/firebase-js-sdk/blob/37de4d015c9d0ed5341519533eb753b58ecbcff0/packages/messaging/src/listeners/sw-listeners.ts#L137) does not handle Notification Click Events if the link passed dose not share the same host as the Servie Worker. Source code shown [here](https://github.com/firebase/firebase-js-sdk/blob/37de4d015c9d0ed5341519533eb753b58ecbcff0/packages/messaging/src/listeners/sw-listeners.ts#L137).
+As of Firebase 9.19.0 JS SDK, [the Firebase Service Worker implementation](https://github.com/firebase/firebase-js-sdk/blob/37de4d015c9d0ed5341519533eb753b58ecbcff0/packages/messaging/src/listeners/sw-listeners.ts#L137) does not handle Notification Click Events if the link passed dose not share the same host as the Servie Worker. Source code shown [here](https://github.com/firebase/firebase-js-sdk/blob/37de4d015c9d0ed5341519533eb753b58ecbcff0/packages/messaging/src/listeners/sw-listeners.ts#L137).
 
 
 The ['fcmOptions.link'](https://firebase.google.com/docs/reference/admin/dotnet/class/firebase-admin/messaging/webpush-fcm-options#link) MUST have the same host as the service worker registration host.
